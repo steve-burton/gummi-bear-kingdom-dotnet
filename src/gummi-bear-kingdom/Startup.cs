@@ -41,6 +41,8 @@ namespace gummi_bear_kingdom
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

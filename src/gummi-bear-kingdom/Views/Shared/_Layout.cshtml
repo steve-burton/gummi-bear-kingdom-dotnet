@@ -9,16 +9,20 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    <div class="logo-banner">
+        <h1>gummi bear kingdom</h1>
+    </div>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <span class="navbar-brand"> @Html.ActionLink("Home", "Index", "Home")</span>
+                <span class="navbar-brand"> @Html.ActionLink("Products", "Index", "Products")</span>
             </div>
-            <ul class="nav navbar-nav navbar-right">
+            @*<ul class="nav navbar-nav navbar-right">
                 <li>@Html.ActionLink("Products", "Index", "Products")</li>
                 <li>@Html.ActionLink("About", "Index", "About")</li>
                 <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
-            </ul>
+            </ul>*@
         </div>
     </nav>
     <div class="container">
