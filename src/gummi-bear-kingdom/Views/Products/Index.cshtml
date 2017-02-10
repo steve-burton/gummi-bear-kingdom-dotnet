@@ -1,0 +1,19 @@
+﻿@model IEnumerable<gummi_bear_kingdom.Models.Product>
+
+@{
+    ViewData["Title"] = "Travel Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Gummi Bear Kingdom Products</h2>
+<div>
+    @foreach (var product in Model)
+    {
+        <div class="list-panel">
+            @Html.DisplayFor(modelProduct => product.Name) | @Html.ActionLink("Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })<br />
+            @Html.DisplayFor(modelProduct => product.Cost)
+        </div>
+
+    }
+    <button class="btn btn-default">@Html.ActionLink("Add new product", "Create")</button>
+</div>

@@ -26,6 +26,8 @@ namespace gummi_bear_kingdom
         }
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+
             services.AddEntityFramework()
                 .AddDbContext<GummiBearDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
         }
