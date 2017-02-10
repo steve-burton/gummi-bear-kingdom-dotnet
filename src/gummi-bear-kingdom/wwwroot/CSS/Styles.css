@@ -2,8 +2,7 @@
     height: 150px;
     background-color: deeppink;
     position: fixed;
-    width: 100%;
-    
+    width: 100%;   
 }
 div.logo-banner h1 {
     color: white;
@@ -21,8 +20,24 @@ nav.navbar a {
     color: white;
     margin: 0px 5px 0px 8px;
 }
+div.top-row {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+div.column {
+    display: inline-block;
+    width: 48%;
+}
+div.column img {
+    width: 450px;
+}
+/*div.right-column img {
+    float: right;
+    width: 550px;
+}*/
 div.container {
-    padding-top: 190px;
+    padding-top: 220px;
 }
 
 div.button {
@@ -96,8 +111,4 @@ div.list-card {
 
 ul {
     list-style-type: none;
-}
-
-img {
-    width: 400px;
 }
