@@ -1,0 +1,37 @@
+﻿@model gummi_bear_kingdom.Models.Product
+
+@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+<div class="form-panel">
+    <h3>Add a new product</h3>
+    <div class="form-group">
+        @using (Html.BeginForm())
+        {
+            <div class="form-control">
+                @Html.LabelFor(model => model.Name)
+                @Html.TextBoxFor(model => model.Name)
+            </div>
+
+            <div class="form-control">
+                @Html.LabelFor(model => model.Cost)
+                @Html.TextBoxFor(model => model.Cost)
+            </div>
+
+            <div class="form-control">
+                @Html.LabelFor(model => model.Country)
+                @Html.TextBoxFor(model => model.Country)
+            </div>
+
+            <div class="form-control">
+                @Html.LabelFor(model => model.Image)
+                @Html.TextBoxFor(model => model.Image)
+            </div>
+            <input type="submit" value="Add new product" />
+        }
+    </div>
+    <button class="btn btn-default">@Html.ActionLink("Back to list", "Index")</button>
+</div>
