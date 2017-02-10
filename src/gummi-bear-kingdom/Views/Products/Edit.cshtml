@@ -1,0 +1,38 @@
+﻿@model gummi_bear_kingdom.Models.Product
+
+@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+<div class="form-panel">
+    <h3>Edit this product</h3>
+    <div class="form-group">
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(model => model.ProductId)
+            <div class="form-control">
+                @Html.LabelFor(model => model.Name)
+                @Html.EditorFor(model => model.Name)
+            </div>
+
+            <div class="form-control">
+                @Html.LabelFor(model => model.Cost)
+                @Html.EditorFor(model => model.Cost)
+            </div>
+
+            <div class="form-control">
+                @Html.LabelFor(model => model.Country)
+                @Html.EditorFor(model => model.Country)
+            </div>
+
+            <div class="form-control">
+                @Html.LabelFor(model => model.Image)
+                @Html.EditorFor(model => model.Image)
+            </div>
+            <input type="submit" value="Update this product" />
+        }
+    </div>
+    <div class="button">@Html.ActionLink("Back to list", "Index")</div>
+</div>
