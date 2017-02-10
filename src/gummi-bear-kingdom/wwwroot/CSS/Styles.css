@@ -27,10 +27,11 @@ div.top-row {
 }
 div.column {
     display: inline-block;
-    width: 48%;
+    width: 45%;
 }
 div.column img {
     width: 450px;
+    float: right;
 }
 /*div.right-column img {
     float: right;
