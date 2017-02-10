@@ -31,7 +31,12 @@ namespace gummi_bear_kingdom.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-            
+
+        public IActionResult Details(int id)
+        {
+            var thisProduct = db.Products.FirstOrDefault(products => products.ProductId == id);
+            return View(thisProduct);
+        }
 
 
     }

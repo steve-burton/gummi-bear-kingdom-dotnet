@@ -1,0 +1,15 @@
+﻿@model gummi_bear_kingdom.Models.Product
+
+@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Product details</h2>
+<div class="details-panel">
+    <img src="@Html.DisplayFor(model => model.Image)" />
+    <h4>@Html.DisplayFor(model => model.Name)</h4>
+    <p>Cost: @Html.DisplayFor(model => model.Cost)<br />
+       Country of origin: @Html.DisplayFor(model => model.Country)</p>
+    <div class="button">@Html.ActionLink("Back to list", "Index")</div>
+</div>

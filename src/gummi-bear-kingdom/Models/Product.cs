@@ -13,7 +13,7 @@ namespace gummi_bear_kingdom.Models
         [Key]
         public int ProductId { get; set; }
         public string Name { get; set; }
-        public int Cost { get; set; }
+        public string Cost { get; set; }
         public string Country { get; set; }
         public string Image { get; set; }
     }
