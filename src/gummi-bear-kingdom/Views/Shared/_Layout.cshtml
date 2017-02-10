@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/styles.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" routerLink="">Gummi Bear Kingdom</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                <li>@Html.ActionLink("About", "Index", "About")</li>
+                <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
