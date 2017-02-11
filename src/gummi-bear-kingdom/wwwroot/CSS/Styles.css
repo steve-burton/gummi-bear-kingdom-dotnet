@@ -1,6 +1,6 @@
 ﻿div.logo-banner {
     height: 150px;
-    background-color: deeppink;
+    background-color: #ff245d;
     position: fixed;
     width: 100%;   
 }
@@ -38,15 +38,19 @@ div.top-row {
     margin-left: auto;
 }
 div.column {
-    /*display: inline-block;*/
     width: 50%;
 }
 div.column-left {
     margin-right: 2%;
 }
+div.column-left p {
+   font-size: 1.4em;
+   font-family: serif;
+   color: dimgrey;
+}
 div.column h2 {
     font-family: serif;
-    color: deeppink;
+    color: #ff245d;
     font-weight: 600;
 }
 div.column img {
@@ -68,12 +72,13 @@ h2.product-index {
 div.list-row {
     display: -webkit-flex;
     display: flex;
-    /*-webkit-flex-direction: row;
-    flex-direction: row;*/
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     margin-left: 7%;
+}
+div.index-page {
+    min-height: 1000px;
 }
 div.list-panel {
     width: 300px;
@@ -93,7 +98,7 @@ div.button {
 }
 div.button a {
     margin-top: 20px;
-    background-color: deeppink;
+    background-color: #ff245d;
     color: white;
     padding: 7px 15px 7px 15px;
     border-radius: 5px;
@@ -113,7 +118,7 @@ div.form-group input {
 }
 div.input input.button {
     margin-top: 20px;
-    background-color: deeppink;
+    background-color: #ff245d;
     color: white;
     padding: 7px 15px 7px 15px;
     border-radius: 5px;
@@ -121,18 +126,21 @@ div.input input.button {
 }
 div.input-update input.button {
     margin-top: 20px;
-    background-color: deeppink;
+    background-color: #ff245d;
     color: white;
     padding: 7px 15px 7px 15px;
     border-radius: 5px;
     width: 140px;
+}
+div.input-update input.button:hover {
+    background-color: hotpink;
 }
 div.input input.button:hover {
     background-color: hotpink;
 }
 div.buy-online {
     margin-top: 5px;
-    background-color: deeppink;
+    background-color: #ff245d;
     color: white;
     font-size: 0.8em;
     padding: 3px 9px 3px 14px;
