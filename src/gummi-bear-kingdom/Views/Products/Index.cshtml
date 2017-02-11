@@ -5,15 +5,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2 class="product">Gummi Bear Kingdom Products</h2>
-<div>
+<h2 class="product details">Gummi Bear Kingdom Products</h2>
+<div class="list-row">
     @foreach (var product in Model)
     {
         <div class="list-panel">
-            @Html.DisplayFor(modelProduct => product.Name) | @Html.ActionLink("Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })<br />
+            <img src="@Html.DisplayFor(modelProduct => product.Image)" /> <br />
+            @Html.DisplayFor(modelProduct => product.Name) <br /> @Html.ActionLink("Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })<br />
             @Html.DisplayFor(modelProduct => product.Cost)
         </div>
 
     }
-    <div class="button">@Html.ActionLink("Add new product", "Create")</div>
 </div>
+<div class="button add-button">@Html.ActionLink("Add new product", "Create")</div>

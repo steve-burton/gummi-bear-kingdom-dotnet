@@ -60,6 +60,28 @@ div.container {
     padding-top: 220px;
 }
 
+div.list-row {
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-flex-direction: row;
+    flex-direction: row;*/
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 10%;
+}
+div.list-panel {
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+div.list-panel img {
+    height: 200px;
+}
+div.add-button {
+    margin-left: 10%;
+}
+
 div.button {
     margin-top: 20px;
 }
@@ -85,14 +107,12 @@ input.button:hover {
 }
 h2.product {
     margin-bottom: 30px;
-}
-h2.details {
     margin-left: 10%;
 }
-div.list-panel {
-    margin-bottom: 20px;
-    font-size: 1.3em;
+div#index {
+    margin-left: 10%;
 }
+
 
 div.details-panel {
     margin-left: 10%;
