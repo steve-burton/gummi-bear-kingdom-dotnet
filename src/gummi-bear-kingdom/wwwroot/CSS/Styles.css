@@ -29,9 +29,7 @@ div.header-right a {
     margin: 13px 27px 0px 0px;
     font-size: 1.3em;
 }
-/*ul.navbar-right li a {
-    color: white;
-}*/
+
 div.top-row {
     display: -webkit-flex;
     display: flex;
@@ -85,6 +83,25 @@ input.button {
 input.button:hover {
     background-color: hotpink;
 }
+h2.product {
+    margin-bottom: 30px;
+}
+h2.details {
+    margin-left: 10%;
+}
+div.list-panel {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+div.details-panel {
+    margin-left: 10%;
+}
+div.details-panel img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
 
 /*body {
     background-image: url("../img/maps.jpg");
@@ -94,7 +111,7 @@ input.button:hover {
 }
 
 
-h2 {
+/*h2 {
     text-align: center;
     width: 50%;
     margin-left: auto;
@@ -133,4 +150,4 @@ div.list-card {
 
 ul {
     list-style-type: none;
-}
+}*/
