@@ -7,7 +7,7 @@
 ### Specifications
 This project will create a web app for a gummi bear online retail store.
 
-I modeled this website after [amy'scandybar](http://www.amyscandybar.com/).
+I modeled this website after [amy's candy bar](http://www.amyscandybar.com/).
 
 
 ## Setup/Installation Requirements
@@ -16,7 +16,7 @@ Clone this repository and open it in Visual Studio.
 * _**In SSMS:**_
 ```
 Open GummiBearKingdom.sql
-Add to the top of the file: CREATE DATABASE GummiBearKingdom 
+Add to the top of the file: CREATE DATABASE GummiBearKingdom
 GO
 Go to the top of the query and hit execute
 ```
