@@ -7,6 +7,8 @@
 ### Specifications
 This project will create a web app for a gummi bear online retail store.
 
+I modeled this website after [amy'scandybar](http://www.amyscandybar.com/).
+
 
 ## Setup/Installation Requirements
 
@@ -26,7 +28,7 @@ None.
 
 ## Support and contact details
 
-You can contact me on Github at steve-burton.
+You can contact me on Github at [Steve Burton.](https://www.github.com/steve-burton).
 
 ## Technologies Used
 
