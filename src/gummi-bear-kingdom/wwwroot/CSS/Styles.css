@@ -59,6 +59,7 @@ div.column img {
 div.container {
     padding-top: 220px;
     width: 90%;
+    margin-left: 4%;
 }
 
 h2.product-index {
@@ -149,7 +150,13 @@ div#index {
     margin-left: 10%;
 }
 
-
+div.delete-page h4 {
+    font-size: 1.5em;
+    margin: 20px 0px 15px 0px;
+}
+.btn-danger {
+    background-color: red;
+}
 
 div.details-panel {
     margin-left: 10%;

@@ -7,11 +7,12 @@
 
 <div class="details-panel">
     <h3>Are you sure you want to delete this product?</h3>
-    <hr />
-    @Html.DisplayFor(model => model.Name)
-    @using (Html.BeginForm())
-    {
-        <input type="submit" value="Delete" class="btn btn-danger" />
-    }
-    <div class="button">@Html.ActionLink("Back to List", "Index")</div>
+    <div class="delete-page">
+        <h4>@Html.DisplayFor(model => model.Name)</h4>
+        @using (Html.BeginForm())
+        {
+            <input type="submit" value="Delete" class="btn btn-danger" />
+        }
+        <div class="button">@Html.ActionLink("Back to List", "Index")</div>
+    </div>
 </div>
