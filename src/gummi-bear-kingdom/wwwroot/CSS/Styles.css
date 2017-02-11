@@ -58,8 +58,12 @@ div.column img {
 
 div.container {
     padding-top: 220px;
+    width: 90%;
 }
 
+h2.product-index {
+    margin-left: 7%;
+}
 div.list-row {
     display: -webkit-flex;
     display: flex;
@@ -68,10 +72,11 @@ div.list-row {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 div.list-panel {
     width: 300px;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 1.3em;
 }
@@ -79,7 +84,7 @@ div.list-panel img {
     height: 200px;
 }
 div.add-button {
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 div.button {
@@ -95,15 +100,46 @@ div.button a {
 div.button a:hover {
     background-color: hotpink;
 }
-input.button {
+
+div.create-page {
+    margin-left: 5%;
+}
+div.form-group input {
+    width: 60%;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+div.input input.button {
     margin-top: 20px;
     background-color: deeppink;
     color: white;
     padding: 7px 15px 7px 15px;
     border-radius: 5px;
+    width: 120px;
 }
-input.button:hover {
+div.input-update input.button {
+    margin-top: 20px;
+    background-color: deeppink;
+    color: white;
+    padding: 7px 15px 7px 15px;
+    border-radius: 5px;
+    width: 140px;
+}
+div.input input.button:hover {
     background-color: hotpink;
+}
+div.buy-online {
+    margin-top: 5px;
+    background-color: deeppink;
+    color: white;
+    font-size: 0.8em;
+    padding: 3px 9px 3px 14px;
+    width: 94px;
+}
+div.buy-online:hover {
+    background-color: hotpink;
+    cursor: pointer;
 }
 h2.product {
     margin-bottom: 30px;
@@ -112,6 +148,7 @@ h2.product {
 div#index {
     margin-left: 10%;
 }
+
 
 
 div.details-panel {

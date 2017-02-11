@@ -4,35 +4,36 @@
     ViewData["Title"] = "Gummi Bear Kingdom";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="create-page">
+    <h2>Edit</h2>
+    <div class="form-panel">
+        <h3>Edit this product</h3>
+        <div class="form-group">
+            @using (Html.BeginForm())
+            {
+                @Html.HiddenFor(model => model.ProductId)
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Name, ViewData["attributes"])<br />
+                    @Html.EditorFor(model => model.Name, new { attributes = new { @class = "form-control" } })
+                </div>
 
-<h2>Edit</h2>
-<div class="form-panel">
-    <h3>Edit this product</h3>
-    <div class="form-group">
-        @using (Html.BeginForm())
-        {
-            @Html.HiddenFor(model => model.ProductId)
-            <div class="form-control">
-                @Html.LabelFor(model => model.Name)
-                @Html.EditorFor(model => model.Name)
-            </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Cost, ViewData["attributes"])<br />
+                    @Html.EditorFor(model => model.Cost, new { attributes = new { @class = "form-control" } })
+                </div>
 
-            <div class="form-control">
-                @Html.LabelFor(model => model.Cost)
-                @Html.EditorFor(model => model.Cost)
-            </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Country, ViewData["attributes"])<br />
+                    @Html.EditorFor(model => model.Country, new { attributes = new { @class = "form-control" } })
+                </div>
 
-            <div class="form-control">
-                @Html.LabelFor(model => model.Country)
-                @Html.EditorFor(model => model.Country)
-            </div>
-
-            <div class="form-control">
-                @Html.LabelFor(model => model.Image)
-                @Html.EditorFor(model => model.Image)
-            </div>
-            <input type="submit" value="Update this product" class="button" />
-        }
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Image, ViewData["attributes"])<br />
+                    @Html.EditorFor(model => model.Image, new { attributes = new { @class = "form-control" } })
+                </div>
+                <div class="input-update"><input type="submit" value="Update product" class="button" /></div>
+            }
+        </div>
+        <div class="button">@Html.ActionLink("Back to list", "Index")</div>
     </div>
-    <div class="button">@Html.ActionLink("Back to list", "Index")</div>
 </div>

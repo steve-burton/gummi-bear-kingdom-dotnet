@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2 class="product details">Gummi Bear Kingdom Products</h2>
+<h2 class="product-index">Gummi Bear Kingdom Products</h2>
 <div class="list-row">
     @foreach (var product in Model)
     {
@@ -13,6 +13,7 @@
             <img src="@Html.DisplayFor(modelProduct => product.Image)" /> <br />
             @Html.DisplayFor(modelProduct => product.Name) <br /> @Html.ActionLink("Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })<br />
             @Html.DisplayFor(modelProduct => product.Cost)
+            <div class="buy-online">buy online</div>
         </div>
 
     }
