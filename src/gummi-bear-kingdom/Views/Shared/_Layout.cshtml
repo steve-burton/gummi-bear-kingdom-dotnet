@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="~/css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
@@ -18,8 +19,11 @@
                 <span class="navbar-brand"> @Html.ActionLink("Home", "Index", "Home")</span>
                 <span class="navbar-brand"> @Html.ActionLink("Products", "Index", "Products")</span>
             </div>
+            <div class="nav header-right">
+                <span > @Html.ActionLink("About", "Index", "About")</span>
+                <span > @Html.ActionLink("Contact", "Index", "Contact")</span>
+            </div>
             @*<ul class="nav navbar-nav navbar-right">
-                <li>@Html.ActionLink("Products", "Index", "Products")</li>
                 <li>@Html.ActionLink("About", "Index", "About")</li>
                 <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
             </ul>*@

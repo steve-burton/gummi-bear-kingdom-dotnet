@@ -6,9 +6,12 @@
 }
 div.logo-banner h1 {
     color: white;
-    font-size: 5em;
-    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 4.2em;
+    font-weight: 200;
+    letter-spacing: 1.5px;
     padding-top: 10px;
+    margin: 40px 0px 0px 9%;
 }
 nav.navbar {
     background-color: dodgerblue;
@@ -18,25 +21,43 @@ nav.navbar {
 }
 nav.navbar a {
     color: white;
-    margin: 0px 5px 0px 8px;
+    margin: 0px 5px 0px 15px;
 }
+div.header-right a {
+    color: white;
+    float: right;
+    margin: 13px 27px 0px 0px;
+    font-size: 1.3em;
+}
+/*ul.navbar-right li a {
+    color: white;
+}*/
 div.top-row {
-    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
 }
 div.column {
-    display: inline-block;
-    width: 45%;
+    /*display: inline-block;*/
+    width: 50%;
+}
+div.column-left {
+    margin-right: 2%;
+}
+div.column h2 {
+    font-family: serif;
+    color: deeppink;
+    font-weight: 600;
 }
 div.column img {
-    width: 450px;
-    float: right;
+    margin-left: 9%;
+    margin-top: 20px;
+    width: 100%;
+    /*float: right;*/
 }
-/*div.right-column img {
-    float: right;
-    width: 550px;
-}*/
+
 div.container {
     padding-top: 220px;
 }
