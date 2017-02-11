@@ -11,7 +11,7 @@ div.logo-banner h1 {
     font-weight: 200;
     letter-spacing: 1.5px;
     padding-top: 10px;
-    margin: 40px 0px 0px 9%;
+    margin: 35px 0px 0px 9%;
 }
 nav.navbar {
     background-color: dodgerblue;
@@ -56,8 +56,14 @@ div.column h2 {
 div.column img {
     margin-left: 9%;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
-    /*float: right;*/
+}
+div.spacer {
+    height: 1px;
+    background-color: dimgray;
+    margin-top: 20px;
+    margin-left: 2.5%;
 }
 
 div.container {
@@ -80,6 +86,7 @@ div.list-row {
 div.index-page {
     min-height: 1000px;
 }
+
 div.list-panel {
     width: 300px;
     margin-top: 20px;
@@ -173,53 +180,3 @@ div.details-panel img {
     width: 300px;
     margin-bottom: 10px;
 }
-
-
-/*body {
-    background-image: url("../img/maps.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
-
-
-/*h2 {
-    text-align: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    padding: 30px 0px 30px 0px;
-    border-radius: 20px;
-    background: radial-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.1));
-
-}
-
-ul li.list-card {
-    background: radial-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.1));
-    padding: 10px 0px 10px 20px;
-    margin-bottom: 20px;
-    list-style-type: none;
-    font-size: 1.5em;
-    border-radius: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.list-card {
-    background: radial-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.1));
-    padding: 20px 20px 20px 30px;
-    margin-bottom: 20px;
-    list-style-type: none;
-    font-size: 1.5em;
-    border-radius: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-ul {
-    list-style-type: none;
-}*/
