@@ -32,7 +32,7 @@ You can contact me on Github at [Steve Burton.](https://www.github.com/steve-bur
 
 ## Technologies Used
 
-C#, VisualStudio, ADO.Net, Sql Server, CSS
+C#, VisualStudio, ASP.Net, Sql Server, CSS
 
 ### License
 
