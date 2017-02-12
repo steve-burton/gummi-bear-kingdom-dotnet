@@ -10,10 +10,11 @@
         @foreach (var product in Model)
         {
             <div class="list-panel">
+                <p>@Html.DisplayFor(modelProduct => product.Name)</p> 
                 <img src="@Html.DisplayFor(modelProduct => product.Image)" /> <br />
-                @Html.DisplayFor(modelProduct => product.Name) <br /> @Html.ActionLink("Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })<br />
+                @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })<br />
                 @Html.DisplayFor(modelProduct => product.Cost)
-                <div class="buy-online">buy online</div>
+                <div class="buy-online">@Html.ActionLink("buy online", "Details", new { id = product.ProductId })</div>
             </div>
         }
     </div>

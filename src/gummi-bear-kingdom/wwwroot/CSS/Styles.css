@@ -93,12 +93,15 @@ div.list-panel {
     margin-bottom: 20px;
     font-size: 1.3em;
 }
+div.list-panel p {
+    font-size: 1.2em;
+    color: dodgerblue
+}
 div.list-panel img {
     height: 200px;
+    margin: 0px 0px 5px 0px;
 }
-div.add-button {
-    margin-left: 7%;
-}
+
 
 div.button {
     margin-top: 20px;
@@ -113,6 +116,24 @@ div.button a {
 div.button a:hover {
     background-color: hotpink;
 }
+div.add-button {
+    margin-left 7%;
+}
+
+div.buy-online {
+    margin-top: 5px;
+}
+div.buy-online a {
+    background-color: #ff245d;
+    color: white;
+    padding: 3px 10px 3px 10px;
+    border-radius: 0px;
+    font-size: 0.8em;
+}
+div.buy-online a:hover {
+    background-color: hotpink;
+}
+
 
 div.create-page {
     margin-left: 5%;
@@ -145,18 +166,7 @@ div.input-update input.button:hover {
 div.input input.button:hover {
     background-color: hotpink;
 }
-div.buy-online {
-    margin-top: 5px;
-    background-color: #ff245d;
-    color: white;
-    font-size: 0.8em;
-    padding: 3px 9px 3px 14px;
-    width: 94px;
-}
-div.buy-online:hover {
-    background-color: hotpink;
-    cursor: pointer;
-}
+
 h2.product {
     margin-bottom: 30px;
     margin-left: 10%;
